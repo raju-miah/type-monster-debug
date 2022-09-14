@@ -1,6 +1,6 @@
 const display = document.getElementById("display");
 const question = document.getElementById("question");
-const startBtn = document.getElementById("starts");
+const startBtn = document.getElementById("starts"); //fixed id name
 const countdownOverlay = document.getElementById("countdown");
 const resultModal = document.getElementById("result");
 const modalBackground = document.getElementById("modal-background");
@@ -114,7 +114,7 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "none";
+      countdownOverlay.style.display = "none"; //fixed counter
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
